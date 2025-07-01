@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>step1 서블릿 연동</title>
+</head>
+<body>
+<!-- 
+		action : 처리할 서버 프로그램 url 
+		서블릿에서는 @WebServlet("/hello") 으로 설정 
+		아래의 form 에서 별도의 요청 방식 request method 을
+		지정하지 않으면 default 로 get 방식으로 요청한다 
+ -->
+<form action="ho" method="get">
+<input type="text" name="keyword" placeholder="검색어" required="required">
+<button type="submit">검색</button>
+</form>
+<br><br>
+<!-- 
+		링크는 기본적으로 get 요청 방식이다
+		url?name=value&name=value
+		 위와 같은 형식의 전송 표현을 query string 이라고 한다
+  -->
+<a href="ho?keyword=이강인">HelloServlet으로 요청</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

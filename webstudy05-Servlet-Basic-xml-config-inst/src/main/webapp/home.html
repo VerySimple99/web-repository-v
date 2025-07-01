@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>home</title>
+</head>
+<body>
+<h3>Java Web Application 설정 방식 중 xml 방식</h3>
+<!-- 
+		action : 처리할 서버 프로그램 url  ( annotation 또는 xml(web.xml) 에 설정 ) 
+		기본 요청방식 : get 
+		button 의 기본 타입 : submit 
+ -->
+<form action="hi">
+	<input type="text" name="nick" placeholder="별명" required="required">
+	<button>get요청버튼</button>
+</form>
+<br><br>
+<form action="hi" method="post">
+   <input type="text" name="nick" placeholder="별명" required="required">
+	<button>post요청버튼</button>
+</form>
+<br><br>
+</body>
+</html>
+
+
+
+
