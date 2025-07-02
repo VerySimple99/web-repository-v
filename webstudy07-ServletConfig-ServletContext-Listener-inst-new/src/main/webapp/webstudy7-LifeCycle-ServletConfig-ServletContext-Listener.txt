@@ -410,7 +410,8 @@ ServletContextListener의 abstract method
  	또한 웹어플리케이션이 종료 전에 이벤트를 감지해 
  	특정 작업을 수행할 수 있음 ==> 필요시 백업 및 로깅 작업을 한다  					 
  					 
- 					 
+ ServletContextListener의 핵심 개념 💡
+ServletContextListener는 자바 웹 애플리케이션에서 웹 애플리케이션의 시작(startup)과 종료(shutdown) 시점을 감지하고 특정 작업을 수행할 수 있도록 해주는 특별한 인터페이스입니다. 마치 웹 애플리케이션의 탄생과 소멸을 지켜보는 감시자(Listener)라고 생각하시면 됩니다.					 
  					 
  					 
  					 
