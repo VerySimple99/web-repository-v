@@ -33,7 +33,9 @@ public class LifeCycleCountServlet extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out=response.getWriter();
 		out.print("<h3>접속수:"+count+"</h3>");
-		count++;
+		synchronized (this) {
+			count++;
+		}		
 		out.close();
 	}
 }
